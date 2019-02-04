@@ -1,0 +1,4 @@
+Last Class: 16
+
+Interfaces:
+https://platzi.com/clases/1340-angular-avanzado/12758-que-son-e-implementando-interfaces-de-typescript16/
