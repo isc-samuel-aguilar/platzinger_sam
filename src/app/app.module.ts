@@ -9,9 +9,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { Routes, RouterModule } from '@angular/router';
 
 const appRoutes : Routes = [
-  {path:'', component:HomeComponent}
-  {path:'home', component:HomeComponent}
-  {path:'login', component:LoginComponent}
+  {path:'', component:HomeComponent},
+  {path:'home', component:HomeComponent},
+  {path:'login', component:LoginComponent},
   {path:'converstaion', component:ConversationComponent},
   {path:'profile', component:ProfileComponent}  
 ];
