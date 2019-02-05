@@ -9,18 +9,48 @@ import { User } from '../interfaces/user';
 })
 export class HomeComponent implements OnInit {
 
+  friends: User[];
+
   constructor() { 
-    let myUser: User = {
-      nick: 'Sam',
-      subnick: 'Samy',
-      age: 36,
+    let usuario1: User = {
+      nick: 'Eduardo',
+      age: 24,
+      email: 'ed@aoe.aoe',
       friend: true,
-      uid:1
-    }
-    let users: User[] = [
-      myUser
-    ];
-    console.log(myUser);
+      uid: 1
+    };
+    let usuario2: User = {
+      nick: 'Freddy',
+      age: 28,
+      email: 'fred@aoe.aoe',
+      friend: true,
+      uid: 2
+    };
+    let usuario3: User = {
+      nick: 'Yuliana',
+      age: 18,
+      email: 'yuli@aoe.aoe',
+      friend: true,
+      uid: 3
+    };
+    let usuario4: User = {
+      nick: 'Ricardo',
+      age: 17,
+      email: 'rick@aoe.aoe',
+      friend: false,
+      uid: 4
+    };
+    let usuario5: User = {
+      nick: 'Marcos',
+      age: 30,
+      email:'marcos@aoe.aoe',
+      friend: false,
+      uid: 5
+    };    
+
+    //console.log(usuario1);
+    this.friends = [usuario1, usuario2, usuario3, usuario4, usuario5];
+
 
 
   }
