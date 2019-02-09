@@ -1,7 +1,8 @@
-export interface User{
-    nick: string;
-    email: string;
-    age?: number;
-    friend: boolean;
-    uid: any
+export interface User {
+  nick: string;
+  subnick?: string;
+  age?: number;
+  email: string;
+  friend: boolean;
+  uid: any;
 }

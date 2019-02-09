@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
-import { User } from '../interfaces/user';
+import {User} from '../interfaces/user';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
   friends: User[];
-  constructor() { 
+  constructor() {
     let usuario1: User = {
       nick: 'Eduardo',
-      age: 24,
+      age: 28,
       email: 'ed@aoe.aoe',
       friend: true,
       uid: 1
@@ -38,16 +38,14 @@ export class UserService {
     let usuario5: User = {
       nick: 'Marcos',
       age: 30,
-      email:'marcos@aoe.aoe',
+      email: 'marcos@aoe.aoe',
       friend: false,
       uid: 5
-    };    
-
-    //console.log(usuario1);
+    };
     this.friends = [usuario1, usuario2, usuario3, usuario4, usuario5];
   }
 
-  getFriends(){
+  getFriends() {
     return this.friends;
   }
 }

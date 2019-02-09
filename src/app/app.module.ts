@@ -6,23 +6,22 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ConversationComponent } from './conversation/conversation.component';
 import { ProfileComponent } from './profile/profile.component';
-import { Routes, RouterModule } from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
-import { SearchPipe } from './pipes/searches';
-import { FormsModule } from'@angular/forms';
-
-const appRoutes : Routes = [
-  {path:'', component:HomeComponent},
-  {path:'home', component:HomeComponent},
-  {path:'login', component:LoginComponent},
-  {path:'conversation/:uid', component:ConversationComponent},
-  {path:'profile', component:ProfileComponent}  
+import {SearchPipe} from './pipes/search';
+import {FormsModule} from '@angular/forms';
+const appRoutes: Routes = [
+  {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'conversation/:uid', component: ConversationComponent},
+  {path: 'profile', component: ProfileComponent}
 ];
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     LoginComponent,
+    HomeComponent,
     ConversationComponent,
     ProfileComponent,
     MenuComponent,
